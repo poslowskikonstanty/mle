@@ -166,7 +166,7 @@ body {
 @media only screen and (max-width: 800px){
   
 
-a {
+.menu a {
   text-decoration: none;
   color: #f9f9f9;
 }
