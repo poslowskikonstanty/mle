@@ -115,6 +115,14 @@ body {
     }
   }
 
+.media {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 30px;
+  visibility: visible;
+}
+
 /*-----------------------------------------------------------*/
 
 
@@ -176,6 +184,15 @@ ul {
   padding: 0;
   display: grid;
   gap: 30px;
+  visibility: hidden;
+}
+
+body.open ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 30px;
+  visibility: visible;
 }
 
 ul li {
@@ -199,7 +216,7 @@ body.open .burger {
 
 .burger {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   display: grid;
   width: 100px;
   height: 100px;
