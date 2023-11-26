@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #1F1F1F;
+    color: #800080;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Style the new container */
+  .content-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  nav {
+    background-image: url('MLE.jpg');
+    background-size: cover;
+    overflow: hidden;
+    flex: 1; /* Take remaining space in the container */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1F1F1F;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.8s;
+  }
+  
+  nav a:hover {
+    background-color: #800080;
+    transition: 0.8s;
+    border-radius: 50px;
+  }
+  
+  main {
+    flex: 2;
+  }
+  
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #1F1F1F;
+    color: #800080;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .content-container {
+      flex-direction: column;
+    }
+  
+    nav {
+      width: 100%;
+    }
+  
+    main {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    h2 {
+      font-size: 1.2em;
+    }
+  
+    h4 {
+      font-size: 0.8em;
+    }
+  
+    a {
+      font-size: 0.5em;
+    }
+  }
+
+/*-----------------------------------------------------------*/
+
+
+
+.navbar span {
+  color: #800080;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: #1F1F1F;
+    color: #f9f9f9;
+    box-sizing: border-box;
+    margin-top: -100px;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 0 0 0px;
+    }
+}
+
+.navbar-tittle {
+    margin: 0;
+    font-size: 26px;
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 100px;
+    transition: 0.3s;
+}
+
+/*-------------------------------------------------------------*/
+
+@media only screen and (min-width: 800px){
+  .burger{
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  
+
+a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 30px;
+}
+
+ul li {
+  text-align: center;
+  font-size: 32px;
+}
+
+label {
+  height: 100vh;
+  cursor: pointer;
+}
+
+input {
+  position: absolute;
+  scale: 0;
+}
+
+body.open .burger {
+  background-image: url("close.svg");
+}
+
+.burger {
+  position: fixed;
+  z-index: 2;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  background-image: url("menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+  cursor: pointer;
+  transition: 0.175s;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 6px;
+  display: grid;
+  transition: 0.3s;
+}
+
+.menu > div {
+  background: #1F1F1F;
+  translate: -100% 0;
+  margin-top: -10px;
+  transition: 0.2s ease-in-out;
+}
+
+body.open .menu > div {
+  translate: 0;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    translate: 0 20px;
+  }
+  100% {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+.menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+body.open .menu ul {
+  opacity: 1;
+}
+
+body.open .menu ul li {
+  animation: appear 0.4s both;
+  
+}
+
+}
