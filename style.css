@@ -239,7 +239,13 @@ body.open .burger {
   bottom: 6px;
   display: grid;
   transition: 0.3s;
+  visibility: hidden;
 }
+
+body.open .menu {
+  visibility: visible;
+}
+
 
 .menu > div {
   background: #1F1F1F;
