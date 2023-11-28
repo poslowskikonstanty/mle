@@ -1,1 +1,1 @@
-strona stworzona przez - Kacper Rokita
+strona stworzona przez - Kacper Rokita / ChatGPT
