@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap');
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #474747;
+    -box-shadow: inset 0 0 6px #474747;
+  }
+
+body {
+    background-color: #202020;
+    font-family: "Lato", sans-serif;
+    color: whitesmoke;
+}
+
+main {
+    height: 600px;
+    display: grid;
+    padding: 20px;
+    transition: 0.2s;
+    margin: 0;
+}
+
+.title h1 {
+    font-size: 48px;
+}
+
+.title h4 {
+    font-size: 38px;
+    margin-top: -80px;
+}
+
+.title h5 {
+    font-size: 28px;
+    margin-top: -80px;
+}
+
+.title a {
+    color: whitesmoke;
+    transition: 0.2s;
+}
+
+.title a:hover {
+    color: #a51af6;
+    transition: 0.2s;
+}
+
+.title {
+    max-width: 800px;
+    display: grid;
+    place-items: center;
+    padding: 30px;
+}
+
+.logo {
+    height: 10px;
+    margin-top: -50px;
+    margin-right: 1700px;
+}
+
+.logo img {
+    height: 200px;
+}
+
+
+
+@media (max-width: 800px) {
+    main {
+        height: 600px;
+    }
+
+    .logo {
+        margin-right: 0px;
+    }
+
+    .title h1 {
+        margin-top: 80px;
+    }
+
+    .title h4 {
+        margin-top: -20px;
+    }
+    
+    .title h5 {
+        margin-top: -20px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* jakiś fancy footer */
+
+footer {
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    padding-top: 60px;
+  }
+  
+  section.top > img {
+    height: 50px;
+    margin: 0 auto 50px;
+  }
+  
+  section {
+    position: relative;
+    margin: 0 30px;
+  }
+  
+  section.top {
+    display: grid;
+    border-bottom: 2px solid rgb(255 255 255 / 20%);
+    padding-bottom: 20px;
+  }
+  
+  section.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 8px;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  section.top .links {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 36px;
+  }
+  
+  .links-column {
+    display: grid;
+    gap: 10px;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #a51af6;
+  }
+  
+  section p {
+    margin: 0;
+  }
+  
+  .legal > a {
+    margin: 0 0 0 4px;
+  }
+  
+  .legal,
+  .copyright {
+    font-size: 12px;
+  }
+  
+  .legal > span {
+    margin-right: 10px;
+  }
+  
+  section.top .socials {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    translate: -50% 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 56px;
+  }
+  
+  section.top .socials > a {
+    font-size: 20px;
+    background: rgb(165 26 246 / 25%);
+    color: var(--color-title);
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+  }
+  
+  .socials-column :is(h2, p) {
+    display: none;
+  }
+  
+  @media (width > 400px) {
+    .links-column {
+      text-align: left;
+    }
+
+    .links-column a {
+        color: whitesmoke;
+    }
+  
+    section.top .links {
+      grid-template-columns: repeat(2, 1fr);
+      margin-right: 50px;
+    }
+  
+    section.bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+    }
+  
+    section.top .socials {
+      left: 0;
+      translate: 0;
+    }
+  
+    section.top > img {
+      margin: 0 0 50px;
+    }
+  }
+  
+  @media (width >= 640px) {
+    section {
+      margin: 0 auto;
+      max-width: 580px;
+      padding: 0;
+    }
+  
+    section.top .links {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    section.top .socials {
+      position: static;
+    }
+  
+    section.bottom {
+      justify-content: flex-start;
+    }
+  
+    .socials-column :is(h2, p) {
+      display: block;
+    }
+  }
