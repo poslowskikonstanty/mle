@@ -1,1 +1,1 @@
-strona stworzona przez - Kacper Rokita / ChatGPT
+Strona stworzona przez - Konstanty Posłowski
