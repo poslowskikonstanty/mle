@@ -15,31 +15,52 @@ body {
     color: whitesmoke;
 }
 
+.body-sumcup {
+   background-image: url(photos/sumcup_baner.png);
+   background-size: cover;
+   -webkit-backdrop-filter: blur(7px);
+   backdrop-filter: blur(7px);
+}
+
 main {
     height: 600px;
     display: grid;
+    place-items: center;
     padding: 20px;
     transition: 0.2s;
     margin: 0;
 }
 
+.title .smcup {
+  margin-top: 200px;
+  font-size: 72px;
+}
+
 .title h1 {
     font-size: 48px;
+    text-shadow: 0px 4px 4px #282828;
+}
+
+.title h2 {
+  font-size: 22px;
+  text-shadow: 0px 4px 4px #282828;
+
 }
 
 .title h4 {
     font-size: 38px;
-    margin-top: -80px;
+    margin-top: 0px;
 }
 
 .title h5 {
     font-size: 28px;
-    margin-top: -80px;
+    margin-top: 0px;
 }
 
 .title a {
     color: whitesmoke;
     transition: 0.2s;
+    text-decoration: underline;
 }
 
 .title a:hover {
@@ -55,14 +76,117 @@ main {
 }
 
 .logo {
+  display: grid;
+    place-items: center;
     height: 10px;
-    margin-top: -50px;
-    margin-right: 1700px;
+    margin-top: -20px;
+    margin-right: 00px;
 }
 
 .logo img {
     height: 200px;
 }
+
+header {
+  background-color: rgb(73, 73, 73);
+  height: 500px;
+  position: relative;
+  background-image: url(tlo.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: 0.4s;
+  margin-top: 200px;
+  margin-left: -10px;
+  margin-right: -8px;
+  -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
+box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(photos/sumcup_baner_500px.png);
+  filter: brightness(50%);
+  filter: blur(7px);
+  background-size: cover;
+  display: flex;
+}
+
+.head-text{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: left;
+  color: #ddd;
+  text-shadow: 3px 3px 5px #000;
+  width: 650px;
+}
+
+.head-text span {
+  text-transform: uppercase;
+  color: #a51af6;
+}
+
+header h1 {
+  transition: 0.4s;
+  font-size: 72px;
+}
+
+header:hover h1 {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+header p {
+  font-size: 18px;
+}
+
+header a {
+  color: whitesmoke;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #a51af6;
+  transition: 0.2s;
+}
+
+button {
+	margin: auto;
+	border-radius: 20px;
+  background: rgba(104, 104, 104, 0.6);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+	width: 250px;
+	height: 70px;
+	font-size: 32px;
+  color: #252525;
+	border: none;
+  transition: 0.3s;
+}
+
+button:hover {
+	border: none;
+  background-color: rgba(165, 26, 246, 0.8);
+	opacity: 1;
+	color: #d8d8d8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.title-button {
+  width: 100%;
+  float: left;
+  margin-top: 40px;
+}
+
+
 
 
 
@@ -86,11 +210,37 @@ main {
     .title h5 {
         margin-top: -20px;
     }
+
+    header h1 {
+      font-size: 36px;
+    }
+
+    header p {
+      font-size: 16px;
+    }
+
+    .head-text {
+      width: 300px;
+    }
+
+    footer {
+      margin-right: 0px;
+    }
+
+    .title .smcup {
+      margin-top: 200px;
+      font-size: 48px;
+    }
+    .title h2 {
+      font-size: 18px;
+    }
+
 }
 
 a {
     text-decoration: none;
 }
+
 
 
 
@@ -106,6 +256,9 @@ footer {
     backdrop-filter: blur(5.2px);
     -webkit-backdrop-filter: blur(5.2px);
     padding-top: 60px;
+    position: relative;
+    z-index: 1;
+    margin-top: 300px;
   }
   
   section.top > img {
@@ -152,6 +305,7 @@ footer {
     font-size: 18px;
     font-weight: 400;
     color: #a51af6;
+    text-shadow: 0px 1px 2px #282828;
   }
   
   section p {
