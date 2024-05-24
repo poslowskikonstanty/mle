@@ -9,6 +9,10 @@
     -box-shadow: inset 0 0 6px #474747;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #202020;
     font-family: "Lato", sans-serif;
@@ -22,6 +26,13 @@ body {
    backdrop-filter: blur(7px);
 }
 
+.body-votemvp {
+  background-image: url(photos/mvpsezon1nominate.png);
+  background-size: cover;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+}
+
 main {
     height: 600px;
     display: grid;
@@ -29,6 +40,22 @@ main {
     padding: 20px;
     transition: 0.2s;
     margin: 0;
+}
+
+.main2 {
+  height: 800px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  transition: 0.2s;
+  margin: 0;
+}
+
+hr {
+  width: 300px;
+  height: 2px;  
+  background-color: #796d5c;  
+  border: none;
 }
 
 .title .smcup {
@@ -39,6 +66,7 @@ main {
 .title h1 {
     font-size: 48px;
     text-shadow: 0px 4px 4px #282828;
+    text-align: center;
 }
 
 .title h2 {
@@ -71,8 +99,19 @@ main {
 .title {
     max-width: 800px;
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     padding: 30px;
+    margin-top: 100px;
+}
+
+.title h3 {
+  margin-left: -20px;
+  color: #796d5c;
+  font-size: 170%;
+}
+
+.title li {
+  font-size: 130%;
 }
 
 .logo {
@@ -95,6 +134,7 @@ header {
   background-size: cover;
   background-position: center;
   transition: 0.4s;
+  margin-bottom: -100px;
   margin-top: 200px;
   margin-left: -10px;
   margin-right: -8px;
@@ -115,6 +155,20 @@ box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
   display: flex;
 }
 
+.hero-bg2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(photos/mvpsezon1nominate.png);
+  filter: brightness(50%);
+  filter: blur(7px);
+  background-size: cover;
+background-position: center;
+  /* background-size: contain; */
+  display: flex;
+}
+
 .head-text{
   position: relative;
   top: 50%;
@@ -129,6 +183,10 @@ box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
 .head-text span {
   text-transform: uppercase;
   color: #a51af6;
+}
+
+.head-text span .sp-gold {
+  color: #796d5c;
 }
 
 header h1 {
@@ -155,7 +213,11 @@ header a:hover {
   transition: 0.2s;
 }
 
-button {
+.vt-link:hover {
+  color: #796d5c;
+}
+
+button, .vt-mvp {
 	margin: auto;
 	border-radius: 20px;
   background: rgba(104, 104, 104, 0.6);
@@ -174,6 +236,15 @@ button {
 button:hover {
 	border: none;
   background-color: rgba(165, 26, 246, 0.8);
+	opacity: 1;
+	color: #d8d8d8;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button .vt-mvp:hover {
+  border: none;
+  background-color: rgba(121, 109, 92, 0.8);
 	opacity: 1;
 	color: #d8d8d8;
   transition: 0.3s;
