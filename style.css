@@ -27,7 +27,7 @@ body {
 }
 
 .body-votemvp {
-  background-image: url(photos/mvpsezon1nominate.png);
+  background-image: url(photos/champions_baner.png);
   background-size: cover;
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
@@ -43,7 +43,7 @@ main {
 }
 
 .main2 {
-  height: 1000px;
+  height: 800px;
   display: grid;
   place-items: center;
   padding: 20px;
@@ -61,6 +61,18 @@ hr {
 .title .smcup {
   margin-top: 200px;
   font-size: 72px;
+  color: white;
+}
+
+.titlechamp {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.titlechamp h1 {
+    font-size: 72px;
+    text-shadow: 0px 4px 4px #282828;
+    text-align: center;
 }
 
 .title h1 {
@@ -105,6 +117,12 @@ hr {
 }
 
 .title h3 {
+  margin-left: -20px;
+  color: #796d5c;
+  font-size: 170%;
+}
+
+.titlechamp h3 {
   margin-left: -20px;
   color: #796d5c;
   font-size: 170%;
@@ -161,6 +179,20 @@ box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 1);
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   background-image: url(photos/mvpsezon1nominate.png);
+  filter: brightness(50%);
+  filter: blur(7px);
+  background-size: cover;
+background-position: center;
+  /* background-size: contain; */
+  display: flex;
+}
+
+.hero-bg3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(photos/champions_baner.png);
   filter: brightness(50%);
   filter: blur(7px);
   background-size: cover;
